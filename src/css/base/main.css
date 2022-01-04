@@ -24,24 +24,20 @@ body {
     height: 100%; 
     background: var(--gray-black); 
 }
-.square-img {
-  width: 70%; 
-  height: 70%; 
-  background: var(--violet); 
-  padding-right: 5px;
-  padding-bottom: 5px;
-  border-radius: 10px;
-  border-radius: 25px;
+.carre-black {
+    margin: auto;
+    width: 60%; 
+    height: 100%; 
+    background: var(--black); 
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 8px;
 }
-.square-img2 {
-  width: 85%; 
-  height: 85%; 
-  background: var(--violet); 
-  padding-right: 5px;
-  padding-bottom: 5px;
-  border-radius: 10px;
-  border-radius: 25px;
+
+.color-white {
+    color: var(--white);
 }
+
 .center-square {
   display: flex;
   justify-content: center;

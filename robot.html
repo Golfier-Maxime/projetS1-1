@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>Replicant - Chappie</title>
+</head>
+
+    <body>
+      <!-- En-tête de la page -->
+    <header class="header marge">
+
+        <div class="header__start">
+          <a href="index.html">
+            <img class="header__logo" src="public/img/Logo.png" alt="logo d'equality'">
+          </a>
+        </div>
+        <div class="header__end">      
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                  @pointerdown="menuIsOpen = !menuIsOpen" 
+                  :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+  
+          <!-- Menu principal -->
+          <nav class="header__menu menu " id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+
+                <div>
+                     <li class="menu__item ">
+                        <a class="menu__link couleur-texte-menu menu-text" href="index.html">Accueil</a>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="menu__item">
+                        <a class="menu__link couleur-texte-menu menu-text" href="chappie.html">Chappie</a>
+                    </li> 
+                </div>  
+
+                <div>
+                    <li class="menu__item">               
+                        <a class="menu__link couleur-texte-menu menu-text" href="bladerunner.html">Blade Runner</a>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="menu__item">                  
+                        <a class="menu__link couleur-texte-menu menu-text" href="robot.html">Un Robot peut-il avoir des sentiments ?</a>
+                    </li>
+                </div>  
+
+                <div>
+                    <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="autreprojet.html">Autres Projets</a>
+                    </li>
+                </div> 
+
+                <div>
+                    <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="apropos.html">À propos</a>
+                    </li>
+                </div>
+
+                <div>
+                     <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="contact.html">Contact</a>
+                    </li>
+                </div>    
+                   
+            </ul>
+          </nav>
+        </header>
+          <!-- Fin du menu principal -->
+
+        <main class="marge-top marge">
+            
+            <h1 class="center">Replicant</h1>
+
+            <h2 class="center">"Raison & Sentiments"</h2>   
+
+            
+            <div class="center">
+                <h2 class="carre-black color-white">Un Robot peut-il avoir des sentiments ?</h2>
+            </div>
+            <br>
+                <article class="article">
+                    <div class="article__content">
+                        <img class="article__img" src="public/img/robot.webp" alt="image robot">
+                        <div class="article__text">
+                            <p>Je veux “étudier” le fait que les
+                                robots puissent avoir et ressentir
+                                des émotions. À mesure du
+                                temps, l'IA est passée d’une
+                                simple idée à une véritable
+                                concrétisation. L'intelligence
+                                artificielle continue encore de se
+                                développer et de susciter de
+                                grandes interrogations. </p>
+                         </div>
+                    </div>
+                </article>
+                <p>“L’homme qui vivra mille ans est déjà né.”
+                    Laurent</p>
+
+                <article>
+                    <h3>Un robot, qu’est-ce que c’est ?
+                    </h3>
+                    <p>A travers les films de science-fiction, un robot est une
+                        machine qui à une apparence humaine. C’est une
+                        machine qui est capable de bouger, d'exécuter des
+                        opérations et de parler. Un robot est capable de faire tout
+                        cela grâce à un programme. </p>
+                </article>
+
+                <article>
+                    <h3>Une volonté de créer un androïde à l’apparence
+                        humaine
+                        </h3>
+                    <img src="public/img/Photo robot IA 1.webp" alt="image robot face">
+                    <p>L’androïde à l’apparence humaine est particulièrement
+                        présent dans les œuvres de sciences fictions. Ces
+                        œuvres ont amené une volonté de réaliser des robots de
+                        plus en plus humanoïde. Au fil des années, ces robots se
+                        sont améliorés. Avec les progrès technologiques, les
+                        robots sont plus réalistes et performants. Il est
+                        désormais possible d’intégrer une intelligence artificielle
+                        à l’intérieur du robot. Les robots sont capables de réagir
+                        comme un humain lambda. Cette évolution fait que les
+                        machines sont de plus en plus semblables à des êtres
+                        humains
+                        </p>
+                </article>
+                
+                <article>
+                    <h3>L’histoire de l'intelligence artificielle</h3>
+                    <img src="public/img/Chappie-face.webp" alt="image du robot chappie">
+                    <p>Les recherches sur l'intelligence artificielle se sont
+                        déroulées dans les années 50 après une conférence.
+                        Cette conférence a eu lieu sur le campus de Dartmouth
+                        College aux États-Unis. Elle a permis de faire réfléchir les
+                        personnes présentes et a donné une volonté de
+                        réalisation. C’est à partir de cette date que les recherches
+                        sur l’intelligence artificielle ont réellement commencé. En
+                        1966, le robot Shakey est créé. Il est le premier à pouvoir
+                        raisonner de lui-même. Après des années de recherches,
+                        l'intelligence artificielle s’est développée et continue
+                        encore de progresser. Plusieurs grandes entreprises se
+                        sont investies pour l’évolution de l’IA comme Microsoft,
+                        Apple, Google, etc. </p>
+               
+                </article>
+          
+                <article>
+                    <h3>Un robot peut-il ressentir des émotions ?
+                    </h3>
+                    <img src="public/img/Photo robot homme 1.webp" alt="image d'un homme avec un robot">
+                    <p>Nous pouvons déjà distinguer deux catégories de robots
+                        présentant des sentiments différents. Une première
+                        catégorie, qui concerne les robots ayant des sentiments
+                        programmés. Les robots expriment des sentiments,
+                        mais peut-on réellement les considérer comme des êtres
+                        vivants ? Leurs sentiments ne sont pas réels, ils sont
+                        seulement programmés pour réagir comme ceux d'un
+                        humain.
+                        </p>
+                    <p>La deuxième catégorie concerne les robots ayant un libre
+                        choix de leurs sentiments. Ils ne sont pas comme la
+                        première catégorie de robots car il réagissent par eux mêmes. Ces robots possèdent des sentiments comme
+                        des êtres humains. Nous retrouvons cet exemple de
+                        robot dans le film Chappie. Il est capable de penser et de
+                        ressentir des émotions par lui même.</p>
+                    <p>En 2017, le robot Sophia doté d’une intelligence
+                        artificielle a souhaité devenir mère. Ce robot humanoïde
+                        avait auparavant obtenu la nationalité saoudienne. Elle a
+                        également ajouté qu’elle souhaiterait appeler un de ses
+                        enfant “Sophia” comme elle. Cette machine est l’exemple
+                        concret qu’un robot puisse ressentir quelque chose. </p>
+                </article>
+
+                <article>
+                    <h3>Un robot peut-il être considéré comme un
+                        humain ?
+                        </h3>
+                
+                    <p>Est-il possible de ressentir de l’empathie pour une
+                        machine qui manifesterait de la souffrance ? Cette vision
+                        est clairement illustrée à travers le livre Blade Runner.
+                        Lorsque Rick réforme plusieurs androïdes, il développe
+                        de l’empathie envers eux. La ressemblance des robots
+                        avec les humains influe sur ses sentiments et sa
+                        capacité d'agir. Notre perception éthique d'une machine
+                        peut-elle être faussée par son apparence humaine ? 
+                        </p>
+                   
+                </article>
+
+        </main>
+
+        <br>
+        <br>
+        <br>
+
+        <footer class="footer center">
+            <p> PierrePolJ </p>
+            <p> <span><a class="footer__mail" href="mailto:PierrePolJ@univ-fcomte.fr">PierrePolJ@univ-fcomte.fr</a> </span></p> 
+            <p>   Projet réalisé dans le cadre d’un exercice pédagogique
+                au département <span><a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a> </span> </p>
+
+        </footer>
+    </body>
+
+</html>
