@@ -11,4 +11,14 @@
 .article__btn {
     background-color: var(--orange);
     text-decoration: none;
+    color: var(--white);
+}
+
+.carre {
+    width: 60%;
+    padding-left: 10px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--orange);
+    border-radius: 8px;
 }
