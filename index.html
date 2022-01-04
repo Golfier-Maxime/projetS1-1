@@ -1,23 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="src/css/style.css">
-        <!-- Chargement de la librairie Alpine JS -->
-        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-        <title>Replicant</title>
-    </head>
-    <body>
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>replicant</title>
+</head>
 
+    <body>
+      <!-- En-tête de la page -->
+    <header class="header marge">
+
+        <div class="header__start">
+          <a href="index.html">
+            <img class="header__logo" src="public/img/Logo.png" alt="logo d'equality'">
+          </a>
+        </div>
+        <div class="header__end">      
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                  @pointerdown="menuIsOpen = !menuIsOpen" 
+                  :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+  
+          <!-- Menu principal -->
+          <nav class="header__menu menu " id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled ">
+              <li class="menu__item">
+                  <a class="menu__link couleur-texte-menu menu-text" href="index.html">Accueil</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link couleur-texte-menu menu-text" href="chappie.html">Chappie</a>
+              </li>
+              <li class="menu__item">               
+                  <a class="menu__link couleur-texte-menu menu-text" href="bladerunner.html">Blade Runner</a>
+              </li>
+              <li class="menu__item">                  
+                  <a class="menu__link couleur-texte-menu menu-text" href="robot.html">Un Robot peut-il avoir des sentiments ?</a>
+              </li>
+              <li class="menu__item">                 
+                  <a class="menu__link couleur-texte-menu menu-text" href="autreprojet.html">Autres Projets</a>
+              </li>
+              <li class="menu__item">                 
+                <a class="menu__link couleur-texte-menu menu-text" href="apropos.html">À propos</a>
+              </li>
+              <li class="menu__item">                 
+                <a class="menu__link couleur-texte-menu menu-text" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <main>
+          <!-- Fin du menu principal -->
+
+        <main class="marge-top marge">
             
+            <h1>Replicant
+                "Raison & Sentiments"</h1>
+
+
+            <h2>Introduction</h2>
+            <p>
+                Ce site internet traite du sujet de l’intelligence artificielle,
+                aussi appelée “IA”. J’étudie la possibilité que les robots
+                puissent avoir et ressentir des émotions. Pour cela, j’ai
+                utilisé deux oeuvres : un livre et un film. Blade Runner,
+                écrit par Philip K. Dick, et Chappie; réalisé par Neill
+                Blomkamp. 
+            </p>
+
+            <article>
+                <h2>Chappie</h2>
+                <img src="public/img/Chappie 1.webp" alt="affiche film chappie">
+                <p>Chappie est un film américain de
+                    science-fiction réalisé par Neill
+                    Blomkamp en mars 2015. </p>
+                <button>Lire la suite</button>
+            </article>
+
+            <article>
+                <h2>Blade Runner</h2>
+                <img src="public/img/bladerunner.webp" alt="affiche livre blade runner">
+                <p>Blade Runner est un livre de
+                    science-fiction écrit par Philip K.
+                    Dick en 1966. Son titre original
+                    est “Do Androids Dream of
+                    Electric Sheep?"</p>
+                <button>Lire la suite</button>
+            </article>
+
+            <article>
+                <h2>Un robot peut-il avoir des sentiments ?</h2>
+                <img src="public/img/robot.webp" alt="image robot">
+                <p>Je veux “étudier” le fait que les
+                    robots puissent avoir et ressentir
+                    des émotions. </p>
+                <button>Lire la suite</button>
+            </article>
+
         </main>
-        <footer>
+        <footer class="footer center">
+            <p> PierrePolJ </p>
+
+            <p> <span> PierrePolJ@univ-fcomte.fr</span></p> 
+            <p>   Projet réalisé dans le cadre d’un exercice pédagogique
+                au département <span>MMI de Montbéliard </span> </p>
+
             
+
         </footer>
     </body>
 

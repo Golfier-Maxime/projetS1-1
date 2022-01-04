@@ -1,0 +1,96 @@
+
+body {
+    background-color: var(--white);
+    font-family: var(--font-roboto);
+}
+
+
+.textCol {
+    color: var(--white);
+}
+
+.egal {
+    color: var(--jaune-fade);
+    text-align: center;
+    font-size: 34px;
+    background-color: var(--violet);
+    font-family: var(--font-alata);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.sqarej {
+    width: 200px; 
+    height: 200px; 
+    background: var(--jaune-fade); 
+    padding-bottom: 6px;
+}
+.square-img {
+  width: 70%; 
+  height: 70%; 
+  background: var(--violet); 
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border-radius: 25px;
+}
+.square-img2 {
+  width: 85%; 
+  height: 85%; 
+  background: var(--violet); 
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border-radius: 25px;
+}
+.center-square {
+  display: flex;
+  justify-content: center;
+}
+.marge-top {
+    margin-top: 27%;
+  }
+.center {
+  text-align: center;
+}
+
+.marge {
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+}
+.marge2 {
+    padding-left: var(--space15x);
+    padding-right: var(--space15x);
+}
+.marge3 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Pour enlever l'apparence par défaut des listes */
+  .list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+/* Transforme le modèle de boite par défaut pour inclure dans la largeur et la hauteur, les marges intérieures et les bordures. */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
