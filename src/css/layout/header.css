@@ -16,13 +16,8 @@ Flex sert à positionner les éléments de l'en-tête (header__start et header__
   
   .header__end {
     display: flex;
-    
   }
   
-  .header__search {
-    width: 40px;
-    filter: invert();
-  }
   
   .header__logo {
     display: block;

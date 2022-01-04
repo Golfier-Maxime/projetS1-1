@@ -19,11 +19,10 @@ body {
     padding-bottom: 10px;
     border-radius: 10px;
 }
-.sqarej {
-    width: 200px; 
-    height: 200px; 
-    background: var(--jaune-fade); 
-    padding-bottom: 6px;
+.sqare {
+    width: 100%; 
+    height: 100%; 
+    background: var(--gray-black); 
 }
 .square-img {
   width: 70%; 

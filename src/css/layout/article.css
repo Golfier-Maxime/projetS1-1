@@ -1,0 +1,14 @@
+.article__content {
+    display: flex;
+    gap: 20px;
+}
+.article__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article__btn {
+    background-color: var(--orange);
+    text-decoration: none;
+}

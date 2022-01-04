@@ -28,28 +28,50 @@
   
           <!-- Menu principal -->
           <nav class="header__menu menu " id="mainNav" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list list-unstyled ">
-              <li class="menu__item">
-                  <a class="menu__link couleur-texte-menu menu-text" href="index.html">Accueil</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link couleur-texte-menu menu-text" href="chappie.html">Chappie</a>
-              </li>
-              <li class="menu__item">               
-                  <a class="menu__link couleur-texte-menu menu-text" href="bladerunner.html">Blade Runner</a>
-              </li>
-              <li class="menu__item">                  
-                  <a class="menu__link couleur-texte-menu menu-text" href="robot.html">Un Robot peut-il avoir des sentiments ?</a>
-              </li>
-              <li class="menu__item">                 
-                  <a class="menu__link couleur-texte-menu menu-text" href="autreprojet.html">Autres Projets</a>
-              </li>
-              <li class="menu__item">                 
-                <a class="menu__link couleur-texte-menu menu-text" href="apropos.html">À propos</a>
-              </li>
-              <li class="menu__item">                 
-                <a class="menu__link couleur-texte-menu menu-text" href="contact.html">Contact</a>
-              </li>
+            <ul class="menu__list list-unstyled">
+
+                <div>
+                     <li class="menu__item ">
+                        <a class="menu__link couleur-texte-menu menu-text" href="index.html">Accueil</a>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="menu__item">
+                        <a class="menu__link couleur-texte-menu menu-text" href="chappie.html">Chappie</a>
+                    </li> 
+                </div>  
+
+                <div>
+                    <li class="menu__item">               
+                        <a class="menu__link couleur-texte-menu menu-text" href="bladerunner.html">Blade Runner</a>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="menu__item">                  
+                        <a class="menu__link couleur-texte-menu menu-text" href="robot.html">Un Robot peut-il avoir des sentiments ?</a>
+                    </li>
+                </div>  
+
+                <div>
+                    <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="autreprojet.html">Autres Projets</a>
+                    </li>
+                </div> 
+
+                <div>
+                    <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="apropos.html">À propos</a>
+                    </li>
+                </div>
+
+                <div>
+                     <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="contact.html">Contact</a>
+                    </li>
+                </div>    
+                   
             </ul>
           </nav>
         </header>
@@ -71,36 +93,52 @@
                 Blomkamp. 
             </p>
 
-            <article>
-                <h2>Chappie</h2>
-                <img src="public/img/Chappie 1.webp" alt="affiche film chappie">
-                <p>Chappie est un film américain de
-                    science-fiction réalisé par Neill
-                    Blomkamp en mars 2015. </p>
-                <button>Lire la suite</button>
+            <article class="article">
+                <h2 class="article__title">Chappie</h2>
+                <div class="article__content">
+                    <img src="public/img/Chappie 1.webp" alt="affiche film chappie">
+                    <div class="article__text">
+                        <p>Chappie est un film américain de
+                            science-fiction réalisé par Neill
+                            Blomkamp en mars 2015. </p>
+                        <a class="article__btn" href="chappie.html">Lire la suite</a>
+                     </div>
+                </div>
             </article>
 
-            <article>
-                <h2>Blade Runner</h2>
-                <img src="public/img/bladerunner.webp" alt="affiche livre blade runner">
-                <p>Blade Runner est un livre de
-                    science-fiction écrit par Philip K.
-                    Dick en 1966. Son titre original
-                    est “Do Androids Dream of
-                    Electric Sheep?"</p>
-                <button>Lire la suite</button>
+            <article class="article">
+                <h2 class="article__title">Blade Runner</h2>
+                <div class="article__content">
+                    <img src="public/img/bladerunner.webp" alt="affiche livre blade runner">
+                    <div class="article__text">
+                        <p>Blade Runner est un livre de
+                            science-fiction écrit par Philip K.
+                            Dick en 1966. Son titre original
+                            est “Do Androids Dream of
+                            Electric Sheep?”</p>
+                        <a class="article__btn" href="bladerunner.html">Lire la suite</a>
+                     </div>
+                </div>
             </article>
 
-            <article>
-                <h2>Un robot peut-il avoir des sentiments ?</h2>
-                <img src="public/img/robot.webp" alt="image robot">
-                <p>Je veux “étudier” le fait que les
-                    robots puissent avoir et ressentir
-                    des émotions. </p>
-                <button>Lire la suite</button>
+            <article class="article">
+                <h2 class="article__title">Un robot peut-il avoir des sentiments ?</h2>
+                <div class="article__content">
+                    <img src="public/img/robot.webp" alt=image robot">
+                    <div class="article__text">
+                        <p>Je veux “étudier” le fait que les
+                            robots puissent avoir et ressentir
+                            des émotions. </p>
+                        <a class="article__btn" href="robot.html">Lire la suite</a>
+                     </div>
+                </div>
             </article>
 
         </main>
+
+        <br>
+        <br>
+
         <footer class="footer center">
             <p> PierrePolJ </p>
 
