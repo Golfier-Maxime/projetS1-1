@@ -22,3 +22,7 @@
     background: var(--orange);
     border-radius: 8px;
 }
+
+.article__img {
+    align-self: flex-start;
+}

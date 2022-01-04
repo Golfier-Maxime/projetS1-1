@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>Replicant - Chappie</title>
+</head>
+
+    <body>
+      <!-- En-tête de la page -->
+    <header class="header marge">
+
+        <div class="header__start">
+          <a href="index.html">
+            <img class="header__logo" src="public/img/Logo.png" alt="logo d'equality'">
+          </a>
+        </div>
+        <div class="header__end">      
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                  @pointerdown="menuIsOpen = !menuIsOpen" 
+                  :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+  
+          <!-- Menu principal -->
+          <nav class="header__menu menu " id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+
+                <div>
+                     <li class="menu__item ">
+                        <a class="menu__link couleur-texte-menu menu-text" href="index.html">Accueil</a>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="menu__item">
+                        <a class="menu__link couleur-texte-menu menu-text" href="chappie.html">Chappie</a>
+                    </li> 
+                </div>  
+
+                <div>
+                    <li class="menu__item">               
+                        <a class="menu__link couleur-texte-menu menu-text" href="bladerunner.html">Blade Runner</a>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="menu__item">                  
+                        <a class="menu__link couleur-texte-menu menu-text" href="robot.html">Un Robot peut-il avoir des sentiments ?</a>
+                    </li>
+                </div>  
+
+                <div>
+                    <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="autreprojet.html">Autres Projets</a>
+                    </li>
+                </div> 
+
+                <div>
+                    <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="apropos.html">À propos</a>
+                    </li>
+                </div>
+
+                <div>
+                     <li class="menu__item">                 
+                        <a class="menu__link couleur-texte-menu menu-text" href="contact.html">Contact</a>
+                    </li>
+                </div>    
+                   
+            </ul>
+          </nav>
+        </header>
+          <!-- Fin du menu principal -->
+
+        <main class="marge-top marge">
+            
+            <h1 class="center">Replicant</h1>
+
+            <h2 class="center">"Raison & Sentiments"</h2>   
+
+            <h2 class="center">Blade Runner</h2>
+
+            
+                <article class="article">
+                    <div class="article__content">
+                        <img class="article__img" src="public/img/bladerunner.webp" alt="affiche film chappie">
+                        <div class="article__text">
+                            <p>Blade Runner est un livre de
+                                science-fiction écrit par Philip K.
+                                Dick en 1966. Son titre original
+                                est “Do Androids Dream of
+                                Electric Sheep?” qui se traduit
+                                par “Les androïdes rêvent-ils de
+                                moutons électriques ?”. Ce livre a
+                                également été réalisé au cinéma
+                                par Ridley Scott en 1982.</p>
+                         </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Bande annonce</h3>
+                    <p>“Les androïdes rêvent-ils ? se demanda Rick. De
+                        toute évidence, la réponse est oui, sans quoi ils ne
+                        leur arriveraient pas de tuer leurs employeurs
+                        pour s'enfuir ensuite sur la terre. Pour y trouver
+                        une vie meilleure, sans servitude.”</p>
+                </article>
+
+                <article>
+                    <h3>Déroulement de l’histoire</h3>
+                    <img src="public/img/Blade-runner 1.webp" alt="image de blade runner">
+                    <p>L’histoire se déroule à la fin du 20ème siècle dans un
+                        monde dévasté par la guerre mondiale Terminus. La terre
+                        est désormais contaminée par de la poussière
+                        radioactive. Le soleil ne brille plus sur la planète. La
+                        plupart des personnes ont émigré vers d’autres colonies
+                        de l’espace. L'ONU a facilité l'émigration vers les autres
+                        colonies et a rendu la vie difficile aux personnes restées
+                        sur terre.
+                        </p>
+                    <p>
+                        Quelques milliers de personnes sont quant à elles
+                        restées sur la terre. Parmis les personnes restantes, on
+                        retrouve surtout les “spéciales” ou encore
+                        appelées“débiles”. Les “spéciales” sont des humains
+                        ayant échoué au test de Qi. Cette catégorie n’a pas le
+                        droit d’émigrer, ni de se marier, elle est contrainte de
+                        rester. Les Spéciales doivent attendre sur terre que la
+                        poussière nucléaire les tue. </p>
+                </article>
+                
+                <article>
+                    <h3>Les sentiments “fictifs”</h3>
+                    <p>Dans ce monde, les sentiments et les émotions ont
+                        presque totalement disparu.
+                        Pour remédier à ce problème les humains disposent de
+                        “l’orgue d’humeur”. Grâce à ce procédé, ils peuvent programmer leurs émotions, comme par exemple la joie.
+                        Il existe également “la boîte à empathie” qui permet
+                        d'entrer en contact avec les autres hommes. Cette boîte
+                        permet de fusionner avec Wilbur Mercer, une sorte de
+                        prophète. </p>
+                </article>
+          
+                <article>
+                    <h3>Un véritable animal pour exister</h3>
+                    <p>Chaque individu doit posséder un animal vivant pour être
+                        perçu comme quelqu’un de normal et de fiable. Une
+                        personne qui ne s'occupe pas d'un véritable animal est
+                        considérée comme immorale et empathique. Posséder
+                        un véritable animal coûte extrêmement cher. Rick
+                        Deckard possédait un vrai mouton, Groucho. Il est mort
+                        après avoir mangé un copeau de fer et à contracté le
+                        tétanos. Rick a acheté un androïde car il n’a pas les
+                        moyens d’acheter un animal vivant. La contrainte avec
+                        les moutons électroniques, c'est qu'ils tombent toujours
+                        en panne. Rick ne veut pas que ses voisins sachent qu'il
+                        ne possède pas un véritable mouton. Lorsqu’un rouage
+                        essentiel vient à lâcher chez les animaux androïdes, ils
+                        tombent en panne. Ceux-ci ressemblent à des animaux
+                        normaux qui sont malades et qui ont besoin d'aller chez
+                        le vétérinaire. Pour que les voisins ne s’aperçoivent pas
+                        de la supercherie, Il existe également des réparateurs. Ils
+                        se font passer pour des vétérinaires et viennent chercher
+                        l’animal pour le réparer.
+                        </p>
+                    <p>
+                        Après la guerre, la plupart des animaux sont morts peu à
+                        peu. Plusieurs espèces se sont éteintes les unes après
+                        les autres. C’est pour cela qu’un véritable animal coûte
+                        cher. Il est possible de se procurer un véritable animal
+                        avec un catalogue comme l'Argus. Les animaux y sont
+                        affichés avec leurs prix, même si l'espèce est éteinte. </p>
+                </article>
+
+                <article>
+                    <h3>Les androïdes Nexus-6</h3>
+                    <img src="public/img/Rick 1.webp" alt="image de rick Nexus-6">
+                    <p>Rick Deckard est un Blade Runner, sa mission est de
+                        réformer les androïdes qui sont sur terre. A chaque fois
+                        qu’il réforme un robot, Rick touche une prime. Certains
+                        androïdes arrivent à s’échapper de Mars et se font
+                        passer pour des humains.
+                        </p>
+                    <p>La société d’Eldon Rosen fabrique un modèle de robot
+                        qui surpasse les autres par rapport à l'intelligence. Cette
+                        classe de robot dernière génération fabriqué par la
+                        compagnie se nomme “Nexus-6”. Les androïdes de ce
+                        type sont l’aboutissement d’une évolution qui leur permet
+                        d'être confondu avec un humain. La seule différence qui
+                        permet de les différencier avec les humains est leur nonempathie. Même la machine la plus douée est incapable
+                        de comprendre et de ressentir de l’empathie. Elle réagit
+                        avec difficulté aux tests, tel que le Voigt-Kampff qui
+                        mesure la personnalité.
+                        </p>
+                    <p>Rick a pour objectif réformer six androïdes de dernières
+                        générations qui se sont échappés. Avec la prime qu’il
+                        recevra pour chaque machine réformée, Rick compte
+                        s’acheter un véritable animal vivant. </p>
+                </article>
+
+                <article>
+                    <h3>Une vision diérente des androïdes</h3>
+                    <p>Rick se rend à la société d’Eldon Rosen et y rencontre
+                        Rachel. Cette femme est présentée comme la nièce du
+                        dirigeant de la société. Le dirigeant demande à Rick de
+                        tester le Voigt-Kampff sur sa nièce. Rick découvre que
+                        Rachel Rosen n’est autre qu’un androïde de type Nexus-6.
+                        Mais cette découverte ne va pas le réjouir, bien au
+                        contraire, Rachel va changer sa vision des androïdes.
+                        </p>
+                    <p>Rachel propose à Rick de l’aider pour trouver les
+                        androïdes. Son but est surtout de faire en sorte que Rick
+                        s’attache à elle pour ne plus qu’il tue.
+                        </p>
+                    <p>
+                        Lorsque l’un des trois derniers androïde est sur le point
+                        de se faire réformer, Rachel se questionne. L'androïde
+                        recherché a pour description le même “corps” que
+                        Rachel, elle qui pensait être “unique”. Elle ressent une
+                        sorte d’empathie, elle prends conscience que sa vie n'est
+                        qu'une illusion. Elle s'aperçoit qu’elle n’est en réalité
+                        qu’un modèle parmi tant d'autre. Elle s’interroge
+                        également sur le fait de ne pas avoir d’enfants.
+                        </p>
+                    <p>
+                        Rick continue sa mission mais progressivement il
+                        ressent de l'empathie. Il termine son travail en tuant tous
+                        les androïdes et reçoit sa prime. Il décide d’acheter une
+                        véritable chèvre noire, ce qui le rend absolument heureux.
+                        Mais Rachel tue la chèvre pour se venger de la mort des
+                        Nexus-6 et briser Rick.</p>
+                    <p>Tout au long de sa mission, et après sa rencontre avec
+                        Rachel, Rick se questionnera au sujet de ce qui
+                        différencie l’Homme de l’androïde. </p>
+                </article>
+
+                <h3>Livre du même auteur :</h3>
+
+                <div class="carousel">
+                    <img src="public/icones/Union1.svg" alt="fleche">
+                    <img src="public/img/livre1.webp" alt="affiche de livre">
+                    <img src="public/icones/Union2.svg" alt="fleche">                
+                </div>
+
+
+
+
+
+        </main>
+
+        <br>
+        <br>
+        <br>
+
+        <footer class="footer center">
+            <p> PierrePolJ </p>
+            <p> <span><a class="footer__mail" href="mailto:PierrePolJ@univ-fcomte.fr">PierrePolJ@univ-fcomte.fr</a> </span></p> 
+            <p>   Projet réalisé dans le cadre d’un exercice pédagogique
+                au département <span><a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a> </span> </p>
+
+        </footer>
+    </body>
+
+</html>
