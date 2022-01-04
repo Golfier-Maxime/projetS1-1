@@ -39,6 +39,9 @@ body {
     text-decoration: none;
     
 }
+.bold {
+    font-weight: bold;
+}
 .italic {
     font-style: italic;
 }
@@ -59,7 +62,7 @@ blockquote p {
   justify-content: center;
 }
 .marge-top {
-    margin-top: 27%;
+    margin-top: 23%;
   }
 .center {
   text-align: center;

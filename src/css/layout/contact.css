@@ -1,3 +1,15 @@
 .fond {
     background-image: url("/public/img/Fond.jpg");
 }
+.marge-left {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+.carre-send {
+    width: 25%;
+    padding-left: 10px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--orange);
+    border-radius: 8px;
+}

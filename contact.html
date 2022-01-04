@@ -10,7 +10,7 @@
     <title>Replicant - Contact</title>
 </head>
 
-    <body>
+    <body class="fond">
       <!-- En-tête de la page -->
     <header class="header marge">
 
@@ -91,27 +91,31 @@
 
                 <form action="" method="post">
                     <div>
-                        <label for="name">Nom / Prénom</label>
+                        <label for="name" class="bold">Nom / Prénom</label>
                         <br>
-                        <input type="text" id="name" name="user_name">
+                        <input type="text" id="name" name="user_name" class="marge-left">
                     </div>
+                    <br>
                     <div>
-                        <label for="mail">E-mail</label>
+                        <label for="mail" class="bold">E-mail</label>
                         <br>
-                        <input type="email" id="mail" name="user_mail">
+                        <input type="email" id="mail" name="user_mail" class="marge-left">
                     </div>
+                    <br>
                     <div>
-                        <label for="mail">Sujet du message</label>
+                        <label for="mail" class="bold">Sujet du message</label>
                         <br>
-                        <input type="sujet" id="sujet" name="user_sujet">
+                        <input type="sujet" id="sujet" name="user_sujet" class="marge-left">
                     </div>
+                    <br>
                     <div>
-                        <label for="msg">Message :</label>
+                        <label for="msg" class="bold">Message :</label>
                         <br>
-                        <textarea id="msg" name="user_message"></textarea>
+                        <textarea id="msg" name="user_message" class="marge-left"></textarea>
                     </div>
-                    <div class="article__btn carre">
-                        <button type="submit">Envoyer</button>
+                    <br>
+                    <div class="article__btn carre-send center">
+                        <button type="submit" class="bold color-white ">Envoyer</button>
                     </div>
                 </form>
                   

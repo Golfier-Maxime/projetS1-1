@@ -26,4 +26,6 @@ Flex sert à positionner les éléments de l'en-tête (header__start et header__
   .couleur-texte-menu {
     color: var(--white);
   }
- 
+ .menu__header-color {
+     background-color: var(--white);
+ }
