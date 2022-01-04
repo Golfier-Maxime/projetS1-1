@@ -54,8 +54,8 @@ body {
 }
 
 .marge {
-    padding-left: var(--space3x);
-    padding-right: var(--space3x);
+    padding-left: var(--space2x);
+    padding-right: var(--space2x);
 }
 .marge2 {
     padding-left: var(--space15x);
