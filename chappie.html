@@ -136,7 +136,16 @@
                 
                 <article>
                     <h3>Chappie</h3>
-                    <img src="public/img/Chappie-face.webp" alt="image du robot chappie">
+                    <div class="visionneuse">
+                        <div class="image image13" 
+                        x-on:mouseover="monterLegende();"
+                        x-on:mouseleave="descendreLegende();">
+                            <img class="center-square" src="public/img/Chappie-face.webp" alt="image du robot chappie">
+                        </div>
+                        <p class="texte13">Image de Chappie</p>
+                    </div>
+                    
+
                     <p>Le robot prend vie, mais tout ne se passe pas comme
                         prévu. Chappie, le robot, est un enfant, il faut tout lui
                         apprendre. Deux des malfaiteurs deviennent ses
@@ -166,7 +175,10 @@
 
                 <article>
                     <h3>Un danger pour l’humanité</h3>
-                    <img src="public/img/Chappie-face_mechant.webp" alt="image de chappie mechant">
+                    <div>
+                        <img class="hero__img img1" src="public/img/Chappie-face_mechant.webp" alt="image de chappie mechant">
+                    </div>
+                       
                     <p>Parallèlement, Vincent, un ingénieur qui travaille avec
                         Deon souhaite remplacer les robots policiers par un
                         modèle qu'il a créé. Vincent est opposé à l'idée de Deon

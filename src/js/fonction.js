@@ -1,4 +1,4 @@
-function carrousel() {
+function carrousel() {  /* Carrousel page Chappie */
     
 	var images15 = document.querySelectorAll('.image15');
     let d = 2500;
@@ -38,11 +38,11 @@ function carrousel() {
     });
 }
 
-function carrousel2() {
+function carrousel2() { /* Carrousel page Blade Runner */
     
 	var images15 = document.querySelectorAll('.image15');
-    let d = 1500;
-    let delta = 500;
+    let d = 2500;
+    let delta = 1000;
 
     images15.forEach(function(img,indice) {
         img.style.zIndex = images15.length - indice;
@@ -76,4 +76,26 @@ function carrousel2() {
             return (5*delta)+(4*d);
         }
     });
+}
+ /* afficher la légende */
+function monterLegende() { 
+    document.querySelector('.texte13').style.display = 'block';
+    return anime({
+        targets: '.texte13',
+        translateY: '-2em',
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+    
+}
+/* cacher la légende */
+function descendreLegende() {
+    return anime({
+        targets: '.texte13',
+        translateY: '2em',
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
 }
