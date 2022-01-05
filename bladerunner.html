@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+	<script src="src/js/fonction.js"></script>
     <title>Replicant - Blade Runner</title>
 </head>
 
@@ -244,11 +246,27 @@
 
                 <h3>Livre du même auteur :</h3>
 
-                <div class="carousel">
+                <div class="carrousel-flex">
                     <img src="public/icones/Union1.svg" alt="fleche">
-                    <img src="public/img/livre1.webp" alt="affiche de livre">
-                    <img src="public/icones/Union2.svg" alt="fleche">                
-                </div>
+                    <div class="carrousel">
+                        
+                        <div class="images15">
+                            <img id="img1" class="image15 imgalt" src="public/img/livre1.webp" alt="affiche livre1">
+                            <img id="img2" class="image15 imgalt" src="public/img/robothomme.webp" alt="affiche robot">
+                            <img id="img3" class="image15 imgalt" src="public/img/manincastle.jpg" alt="livre man in hight castle">
+                            <img id="img4" class="image15 imgalt" src="public/img/flowmytear.jpg" alt="livre flow my tear">
+                            <img id="img5" class="image15 imgalt" src="public/img/Ubik_(1969).jpg" alt="livre ubik">
+                        </div>
+                                      
+                    </div>
+                    <img src="public/icones/Union2.svg" alt="fleche">
+                    </div>
+    
+                    <script>
+                
+                        carrousel();
+                        
+                    </script>
 
 
 

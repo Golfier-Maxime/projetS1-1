@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+	<script src="src/js/fonction.js"></script>
     <title>Replicant - Chappie</title>
 </head>
 
@@ -181,12 +183,27 @@
 
                 <h3>Film du même réalisateur :</h3>
 
-                <div class="carousel">
-                    <img src="public/icones/Union1.svg" alt="fleche">
-                    <img src="public/img/elysium.webp" alt="affiche film elysium">
-                    <img src="public/icones/Union2.svg" alt="fleche">                
+                <div class="carrousel-flex">
+                <img src="public/icones/Union1.svg" alt="fleche">
+                <div class="carrousel">
+                    
+                    <div class="images15">
+                        <img id="img1" class="image15 imgalt" src="public/img/elysium.webp" alt="affiche film elysium">
+                        <img id="img2" class="image15 imgalt" src="public/img/machine.webp" alt="affiche film machine">
+                        <img id="img3" class="image15 imgalt" src="public/img/deminic.jpg" alt="affiche film demonic">
+                        <img id="img4" class="image15 imgalt" src="public/img/district9.jpg" alt="affiche film distric 9">
+                        <img id="img5" class="image15 imgalt" src="public/img/Rakka_poster.jpg" alt="affiche film rakka">
+                    </div>
+                                  
+                </div>
+                <img src="public/icones/Union2.svg" alt="fleche">
                 </div>
 
+                <script>
+			
+                    carrousel();
+                    
+                </script>
 
 
 
