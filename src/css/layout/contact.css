@@ -1,5 +1,6 @@
 .fond {
     background-image: url("/public/img/Fond.jpg");
+    size: 100%;
 }
 .marge-left {
     margin-left: 5px;
