@@ -136,6 +136,7 @@
                 
                 <article>
                     <h3>Chappie</h3>
+                    <!-- mettre la souris sur l'image affiche la legende -->
                     <div class="visionneuse">
                         <div class="image image13" 
                         x-on:mouseover="monterLegende();"
@@ -175,10 +176,11 @@
 
                 <article>
                     <h3>Un danger pour l’humanité</h3>
-                    <div>
-                        <img class="hero__img img1" src="public/img/Chappie-face_mechant.webp" alt="image de chappie mechant">
-                    </div>
-                       
+                    <!-- Cliquer sur l'image change par une autre image et apres reviens sur l'image de base -->
+                    <div class="hero" x-data="{imgg: true}" :class="!imgg && 'altImg'">
+                        <img class="hero__img img1" src="public/img/Chappie-face_mechant.webp" alt="image de chappie mechant" @pointerdown="imgg = !imgg">
+                        <img class="hero__img img2" src="public/img/Chappie-face.webp" alt="image de chappie mechant" @pointerdown="imgg = !imgg">
+                    </div>   
                     <p>Parallèlement, Vincent, un ingénieur qui travaille avec
                         Deon souhaite remplacer les robots policiers par un
                         modèle qu'il a créé. Vincent est opposé à l'idée de Deon
